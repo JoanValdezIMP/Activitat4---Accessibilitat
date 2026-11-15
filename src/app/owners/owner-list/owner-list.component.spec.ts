@@ -115,6 +115,11 @@ describe('OwnerListComponent', () => {
         expect(component).toBeTruthy();
     });
 
+    it('should render the page title as a level-one heading', () => {
+        fixture.detectChanges();
+        expect(fixture.nativeElement.querySelector('h1')?.textContent?.trim()).toBe('Owners');
+    });
+
     it('should load owners on init', () => {
         fixture.detectChanges();
         expect(vi.mocked(spy).mock.calls.length > 0, 'getOwners called').toBe(true);

@@ -76,6 +76,10 @@ describe('OwnerAddComponent', () => {
         expect(component).toBeTruthy();
     });
 
+    it('should render the page title as a level-one heading', () => {
+        expect(fixture.nativeElement.querySelector('h1')?.textContent?.trim()).toBe('New Owner');
+    });
+
 
 
     it('back button routing', async () => {

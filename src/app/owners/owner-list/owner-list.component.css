@@ -20,3 +20,11 @@
 {
 display:none;
 }
+
+.ownerFullName a {
+  color: #0a58ca;
+}
+
+.ownerFullName a:hover {
+  color: #084298;
+}
